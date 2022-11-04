@@ -672,6 +672,8 @@ export const useAddSuperHeroData = () => {
 ### 21. Optimistic Update
 
 mutate이후 UI에서도 업데이트 할것이란 (낙관적인) 가정으로 미리 UI를 업데이트 시켜주고 서버를 통해 검증을 받고 `업데이트` Or `롤백`하는 방식
+```
+(useMutation 함수 위부분 생략)
 onMutate: async (newHero) => {
 	// 새로 고침 취소 => 업데이트 덮어씌우기 방지
   await queryClient.cancelQueries("super-heroes"); 
@@ -695,3 +697,4 @@ onError: (_err, _hero, context) => {
 onSettled: () => {
   queryClient.invalidateQueries("super-heroes"); // 서버와 데이터 동기화cu
 },
+```

@@ -95,7 +95,7 @@ const { isLoading, data } = useQuery("super-heroes", fetchSuperHeroes);
 기존엔 error를 위한 스테이트를 받을어서 fatch의 에러 케이스에서 setState를 통해 상태를 렌더링을 관리하였다.  쿼리에서는 `isError, erroe` 값을 통해 케이스를 쉽게 가져갈 수 있다.
 
 ```jsx
-const { isLoading, data, **isError**, **error** } = useQuery("super-heroes", fetchSuperHeroes);
+const { isLoading, data, isError, error } = useQuery("super-heroes", fetchSuperHeroes);
 
 if (isLoading) return <h2>Loading....</h2>;
 

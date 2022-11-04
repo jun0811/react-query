@@ -14,6 +14,54 @@
       "id": 3,
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "111",
+      "alterEgo": "123132",
+      "id": 4
+    },
+    {
+      "name": "lsj",
+      "alterEgo": "kim",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "name": "1231",
+      "alterEgo": "12313",
+      "id": 7
+    },
+    {
+      "name": "123",
+      "alterEgo": "123",
+      "id": 8
+    },
+    {
+      "name": "12313",
+      "alterEgo": "4444",
+      "id": 9
+    },
+    {
+      "name": "kim",
+      "alterEgo": "lee",
+      "id": 10
+    },
+    {
+      "name": "asdasd",
+      "alterEgo": "asdasdasd",
+      "id": 11
+    },
+    {
+      "name": "test1",
+      "alterEgo": "test2",
+      "id": 12
+    },
+    {
+      "name": "test2",
+      "alterEgo": "ttt2",
+      "id": 13
     }
   ],
   "friends": [
@@ -28,6 +76,55 @@
     {
       "id": 3,
       "name": "PARK"
+    }
+  ],
+  "users": [
+    {
+      "id": "lee@example.com",
+      "channelId": "codeLee"
+    }
+  ],
+  "channels": [
+    {
+      "id": "codeLee",
+      "courses": [
+        "react",
+        "vue"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "green"
+    },
+    {
+      "id": 4,
+      "label": "white"
+    },
+    {
+      "id": 5,
+      "label": "black"
+    },
+    {
+      "id": 6,
+      "label": "purple"
+    },
+    {
+      "id": 7,
+      "label": "yellow"
+    },
+    {
+      "id": 8,
+      "label": "skyblue"
     }
   ]
 }

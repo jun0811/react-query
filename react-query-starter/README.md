@@ -1,10 +1,15 @@
-## 사용 이유
+# React- Query
 
+### 프로젝트 실행
+- yarn 
+- yarn start
+- yarn serve-json
+
+## react-qurey를 사용하는 이유
 - 서버, 클라이언트 데이터를 분리
 - 캐싱, 값 업데이트, 에러핸들링 등 비동기 과정을 더욱 편하게 하는데 사용
 
 ## 장점
-
 - 캐싱
 - get을 한 데이터에 대해 update를 하면 자동으로 get을 다시 수행한다. (예를 들면 게시판의 글을 가져왔을 때 게시판의 글을 생성하면 게시판 글을 get하는 api를 자동으로 실행 )
 - 데이터가 오래 되었다고 판단되면 다시 get (`invalidateQueries`)
@@ -90,7 +95,7 @@ const { isLoading, data } = useQuery("super-heroes", fetchSuperHeroes);
 기존엔 error를 위한 스테이트를 받을어서 fatch의 에러 케이스에서 setState를 통해 상태를 렌더링을 관리하였다.  쿼리에서는 `isError, erroe` 값을 통해 케이스를 쉽게 가져갈 수 있다.
 
 ```jsx
-const { isLoading, data, isError, error } = useQuery("super-heroes", fetchSuperHeroes);
+const { isLoading, data, **isError**, **error** } = useQuery("super-heroes", fetchSuperHeroes);
 
 if (isLoading) return <h2>Loading....</h2>;
 
